@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="shortcut icon" type="imagex/png" href="ico.ico">
+    <title>Cuidados com o Covid-19</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        #blocotitulo {
+            background-color: rgb(53, 53, 53);
+            color: rgb(207, 207, 207);
+            height: 120px;
+            width: auto;
+            padding: 10px;
+            text-align: center;
+            font-size: 35px;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(36, 36, 36);
+        }
+        /* Style the header */
+        
+        header {
+            background-color: rgb(0, 0, 0);
+            /*padding: 112px;*/
+            width: auto;
+            height: 130px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+        /* Create two columns/boxes that floats next to each other */
+        
+        nav {
+            float: left;
+            width: 15%;
+            height: 100%;
+            /* only for demonstration, should be removed */
+            background: rgb(53, 53, 53);
+            padding: 20px;
+        }
+        /* Style the list inside the menu */
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #a3a3a3;
+            height: 100%;
+            color: rgb(0, 0, 0)
+        }
+        
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        
+        @media (max-width: 600px) {
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+        
+        a:link {
+            color: rgb(0, 0, 0);
+            background-color: transparent;
+            text-decoration: none;
+        }
+        
+        a:visited {
+            color: rgb(0, 0, 0);
+            background-color: transparent;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: rgb(44, 44, 44);
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        
+        a:active {
+            color: rgb(22, 22, 22);
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+                    #divBusca{
+            float:right;
+            background-color:#E0EEEE;
+            border:solid 2px #868e8f;
+            border-radius:10px;
+            width:300px;
+            height:32px;
+            }
+
+            #txtBusca{
+            float:left;
+            background-color:transparent;
+            padding-left:5px;
+            font-size:18px;
+            border:none;
+            height:32px;
+            width:191px;
+            }
+
+            #btnBusca{
+            border:none;
+            float:left;
+            height:30px;
+            border-radius:0 7px 7px 0;
+            width:80px;
+            font-weight:bold;
+            background:#868e8f;
+            }
+
+            #divBusca img{
+            float:left;
+            }
+       
+            #txtTitulo{
+        float:center;
+        background-color:transparent;
+        padding-left:5px;
+        font-style:italic;
+        font-size:40px;
+        border:none;
+        color: #a3a3a3;
+        }
+
+        #references{
+
+            float: right;
+            background-color: transparent;
+            font-style: italic;
+            border: #ccc;
+            border-width: 3px;
+        }
+ 
+ 
+ </style>
+</head>
+
+<body>
+
+    <header class="header">
+        
+        <img src="download.png" alt="Prefeitura Municipal de Três Lagoas" width="449" height="112" align="center" >
+
+
+    </header>
+
+    <h1><button style="background-color: rgb(0, 0, 0); border-color: #ccc; border-radius: 50px; color: #ccc; width: 112px; height: 40px;">Início</button>
+        <button style="background-color: rgb(0, 0, 0); border-color: #ccc; border-radius: 50px; color: #ccc; width: 112px; height: 40px;">Notícias</button>
+        <button style="background-color: rgb(0, 0, 0); border-color: #ccc; border-radius: 50px; color: #ccc; width: 112px; height: 40px;">Informaçôes</button>
+        <button style="background-color: rgb(0, 0, 0); border-color: #ccc; border-radius: 50px; color: #ccc; width: 112px; height: 40px;">Ajuda</button>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<!-- Trigger/Open The Modal -->
+<button style="background-color: rgb(0, 0, 0); border-color: #ccc; border-radius: 50px; color: #ccc; width: 112px; height: 40px;" id="myBtn">Open Modal</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   <div class="container">
+  <h1>Contate-nos :D</h1>
+  <form target="_blank" action="https://formsubmit.co/compradorhum@gmail.com.com" method="POST">
+    <div class="form-group">
+      <div class="form-row">
+        <div class="col">
+          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+        </div>
+        <div class="col">
+          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+    </div>
+    <button style="background-color: rgb(0, 0, 0); border-color: #ccc; border-radius: 50px; color: #ccc; width: 112px; height: 40px;" type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+  </form>
+</div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+        <div id="divBusca">
+             <img src="search.png" alt="searchbutton" width="25px" height="25px">
+            <input type="text" id="txtBusca" placeholder="Buscar..."/>
+            <button id="btnBusca">Buscar</button>
+          </div>
+
+        </h1>
+
+    <div id="blocotitulo">
+        <a name="topo"></a>
+        <h2><p id = "txtTitulo">Cuidados com o COVID-19</p></h2>
+    </div>
+
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#pt1">◉ <b>Como o COVID-19 se espalha entre as pessoas?</b></a></li>
+                <p></p>
+                <li><a href="#pt2">◉ <b>Quando as pessoas infectadas transmitem o vírus?</b></a></li>
+                <p></p>
+                <li><a href="#pt3">◉ <b>Qual é a diferença entre pessoas assintomáticas ou pré-sintomáticas?</b></a></li>
+                <p></p>
+                <li><a href="#pt4">◉ <b>Existem determinadas configurações em que o COVID-19 pode se espalhar mais facilmente?</b></a></li>
+                <p></p>
+                <li>
+                    <a href="#pt5"> <b>◉ Como posso reduzir meu risco de contrair COVID-19?</b></a>
+                </li>
+            </ul>
+        </nav>
+
+        <article>
+            <a name="pt1"></a>
+            <h1>Como o COVID-19 se espalha entre as pessoas?</h1>
+            <p> Sabemos que a doença é causada pelo vírus SARS-CoV-2, que se espalha entre as pessoas de várias maneiras diferentes.</p>
+            <p> As evidências atuais sugerem que o vírus se espalha principalmente entre pessoas que estão em contato próximo, por exemplo, a uma distância de conversação. O vírus pode se espalhar da boca ou nariz de uma pessoa infectada em pequenas partículas
+                líquidas quando tosse, espirra, fala, canta ou respira. Outra pessoa pode então contrair o vírus quando partículas infecciosas que passam pelo ar são inaladas a curto alcance (isso geralmente é chamado de aerossol de curto alcance ou transmissão
+                aérea de curto alcance) ou se partículas infecciosas entrarem em contato direto com os olhos, nariz, ou boca (transmissão de gotículas).</p>
+            <p> O vírus também pode se espalhar em ambientes fechados mal ventilados e/ou lotados, onde as pessoas tendem a passar mais tempo. Isso ocorre porque os aerossóis podem permanecer suspensos no ar ou viajar mais longe do que a distância de conversação
+                (isso geralmente é chamado de aerossol de longo alcance ou transmissão aérea de longo alcance).</p>
+            <p>As pessoas também podem ser infectadas ao tocar seus olhos, nariz ou boca após tocar superfícies ou objetos que foram contaminados pelo vírus. </p>
+            <a name="pt2"></a>
+            <h1>Quando as pessoas infectadas transmitem o vírus?</h1>
+            <p> Independentemente de apresentarem ou não sintomas, as pessoas infectadas podem ser contagiosas e o vírus pode se espalhar delas para outras pessoas.</p>
+            <p> Dados laboratoriais sugerem que as pessoas infectadas parecem ser mais infecciosas pouco antes de desenvolverem sintomas (ou seja, 2 dias antes de desenvolverem sintomas) e no início de sua doença. As pessoas que desenvolvem doenças graves
+                podem ser infecciosas por mais tempo.</p>
+            <p> Embora alguém que nunca desenvolva sintomas possa transmitir o vírus para outras pessoas, ainda não está claro com que frequência isso ocorre e são necessárias mais pesquisas nessa área.</p>
+            <h1>Qual é a diferença entre pessoas assintomáticas ou pré-sintomáticas?</h1>
+            <p>Ambos os termos referem-se a pessoas que não apresentam sintomas. A diferença é que 'assintomático' refere-se a pessoas que estão infectadas, mas nunca desenvolvem sintomas, enquanto 'pré-sintomático' refere-se a pessoas infectadas que ainda
+                não desenvolveram sintomas, mas desenvolvem sintomas mais tarde. </p>
+            <a name="pt3"></a>
+            <a name="pt4"></a>
+            <h1>Existem determinadas configurações em que o COVID-19 pode se espalhar mais facilmente?</h1>
+            <p> Sim, qualquer situação em que as pessoas estejam próximas umas das outras por longos períodos de tempo aumenta o risco de transmissão. Locais internos, especialmente locais onde há pouca ventilação, são mais arriscados do que locais externos.
+                Atividades em que mais partículas são expelidas da boca, como cantar ou respirar pesadamente durante o exercício, também aumentam o risco de transmissão. Os “Três Cs” são uma maneira útil de pensar sobre isso. Eles descrevem as configurações
+                em que a transmissão do vírus COVID-19 se espalha mais facilmente:</p>
+            <p>
+                <li>Lugares cheios(Crowed Places);</li>
+            </p>
+            <p>
+                <li> Congfigurações de contato próximo (Close-contact settings);</li>
+            </p>
+            <p>
+                <li>Espaços confinados e fechados com pouca ventilação (Espaços confinados e fechados com pouca ventilação). </li>
+            </p>
+            <img src="covid.jpg" alt="Os 3 Cs" width="auto" height="auto" align="center">
+            <p> Nas unidades de saúde onde as pessoas estão recebendo tratamento para COVID-19, há um risco aumentado de infecção durante procedimentos médicos chamados procedimentos de geração de aerossóis. Estes podem produzir gotículas muito pequenas que
+                podem ficar suspensas no ar por longos períodos de tempo e se espalhar além das distâncias de conversação (normalmente 1 metro). É por isso que os profissionais de saúde que realizam esses procedimentos ou em ambientes onde esses procedimentos
+                são realizados devem tomar medidas específicas de proteção aérea, incluindo o uso de equipamentos de proteção individual adequados, como respiradores. É também por isso que os visitantes não são permitidos nas áreas onde esses procedimentos
+                estão sendo realizados.</p>
+            <a name="pt5"></a>
+            <h1>Como posso reduzir meu risco de contrair COVID-19?</h1>
+            <p></p>
+            <p>
+                <li> Há muitas coisas que você pode fazer para manter você e seus entes queridos protegidos do COVID-19. Conheça seus riscos para diminuir os riscos. Siga estas precauções básicas:</li>
+            </p>
+            <p>
+                <li> Siga as orientações locais: Verifique para ver o que as autoridades nacionais, regionais e locais estão aconselhando para que você tenha as informações mais relevantes para onde você está.</li>
+            </p>
+            <p>
+                <li> Mantenha distância: Fique a pelo menos 1 metro de distância das outras pessoas, mesmo que não pareçam estar doentes, pois as pessoas podem ter o vírus sem apresentar sintomas.</li>
+            </p>
+            <p>
+                <li>Use uma máscara: use uma máscara de três camadas bem ajustada, especialmente quando não puder se distanciar fisicamente ou se estiver em ambientes fechados. Limpe as mãos antes de colocar e tirar a máscara.</li>
+            </p>
+            <p>
+                <li> Evite lugares lotados, mal ventilados, locais fechados e evite contato prolongado com outras pessoas. Passe mais tempo ao ar livre do que dentro de casa.</li>
+            </p>
+            <p>
+                <li> A ventilação é importante: Abra as janelas quando estiver dentro de casa para aumentar a quantidade de ar externo.</li>
+            </p>
+            <p>
+                <li> Evite tocar em superfícies, especialmente em ambientes públicos ou unidades de saúde, caso pessoas infectadas com COVID-19 as tenham tocado. Limpe as superfícies regularmente com desinfetantes padrão.</li>
+            </p>
+            <p>
+                <li>Limpe frequentemente as mãos com água e sabão ou com álcool gel. Se puder, leve com você um gel à base de álcool e use-o com frequência.</li>
+            </p>
+            <p>
+                <li> Cubra sua tosse e espirro com um cotovelo dobrado ou lenço de papel, jogando os lenços usados ​​em uma lixeira fechada imediatamente. Em seguida, lave as mãos ou use um desinfetante para as mãos à base de álcool.</li>
+            </p>
+            <p>
+                <li> Vacine-se: Quando for a sua vez, vacine-se. Siga as orientações e recomendações locais sobre vacinação.</li>
+            </p>
+
+            <address id = "references">
+                Escrito pela equipe da OMS.<br>
+                Acesse em:<br>
+                <a href="https://www-who-int.translate.goog/news-room/questions-and-answers/item/coronavirus-disease-covid-19-how-is-it-transmitted?_x_tr_sl=auto&_x_tr_tl=pt&_x_tr_hl=pt-BR&_x_tr_pto=op">World Health Organization. Coronavirus disease (COVID-19): How is it transmitted?</a>    
+            </address>
+
+            <p></p>
+            <a style="bottom: auto;" href="#topo"><b>Voltar ao topo</b></a>
+        </article>
+    </section>
+
+    <footer>
+        <p>
+            <a href="https://www.facebook.com/PrefeituraTL/"><img src="facebook.png" alt="Facebook icon" width="56px" height="56px" align="left"></a>
+            <a href="https://www.instagram.com/nossatreslagoas/?hl=en"><img src="instagram.png" alt="Instagram icon" width="66px" height="50px" align="left"></a>
+        </p>
+        <img src="footer.png" alt="Prefeitura Municipal de Três Lagoas" width="129" height="65" align="right">
+        <p style="text-align: center;">Três Lagoas - MS</p>
+        <p style="text-align: center;">2022</p>
+
+    </footer>
+
+</body>
+
+</html>
